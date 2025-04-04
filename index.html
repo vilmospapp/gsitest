@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My App</title>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="content">
+    <h1>My App</h1>
+    <div id="loginContainer">
+      <!-- Google Sign-In button will appear here -->
+      <div id="g_id_onload"
+         data-client_id="426318886139-dhd2ksm0sqpfaa7e8rq87nug00midohp.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse">
+      </div>
+      <div class="g_id_signin" data-type="standard"></div>
+    </div>
+    <div id="appContent" style="display: none;">
+      <!-- Your application content will appear here after authentication -->
+      <p>Welcome, <span id="userName"></span>!</p>
+      <button id="logoutBtn">Sign Out</button>
+    </div>
+  </div>
+</body>
+</html>
